@@ -3,10 +3,9 @@ print("Welcome to the phone list, the following commands are available:")
 print("LIST, ADD, DELETE, QUIT")
 dbconn = psycopg2.connect(
     host="localhost",
-    port="5433",
-    database="phonedb",
+    database="Phonelistdv",
     user="postgres",
-    password="tmad1652")
+    password="Monasogsql@12")
 def read_phonelist(conn):
     cur = conn.cursor()
     cur.execute("SELECT * FROM phonelist;")
