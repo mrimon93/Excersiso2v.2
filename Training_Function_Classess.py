@@ -9,6 +9,7 @@ print("Time for Training Function and Classess With Python and GitHub")
 
 
 class Item:
+    pay_rate = 0.8 #Class attribute
     #Defining the parameters accoring to the output i want
     def __init__(self,name: str, price: floar, quantity=0): #Magic Method 14.28 Min
         #Run validations to the recieved arguments
