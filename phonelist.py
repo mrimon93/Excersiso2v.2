@@ -1,4 +1,5 @@
 import psycopg2
+print("Hello Muzammil, this is from Github") 
 print("Welcome to the phone list, the following commands are available:")
 print("LIST, ADD, DELETE, QUIT")
 
