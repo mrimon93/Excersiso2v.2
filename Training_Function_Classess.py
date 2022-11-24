@@ -16,7 +16,7 @@ class Item:
 
         #Using assert as commant
 
-        assert price >=0
+        assert price >=0, f"price {price} is not valid"
         assert quantity >=0
 
 
