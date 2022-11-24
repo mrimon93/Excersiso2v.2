@@ -1,7 +1,7 @@
 import psycopg2
-print("Hello Muzammil, this is from Github") 
 print("Welcome to the phone list, the following commands are available:")
 print("LIST, ADD, DELETE, QUIT")
+print("This is from Branch 1 ")
 
 def SQL_Connection():
     dbconn = psycopg2.connect(
@@ -51,7 +51,7 @@ while True: ## REPL - Read Execute Print Loop/Read Execute Program Loop
         add_phone(SQL_Connection(), name, phone)
     elif cmd == "DELETE":
         name = input("  Name: ")
-        delete_phone(SQL_Connection(), name)
+        delete_phone(SQL_Connection(),name)
     elif cmd == "QUIT":
         save_phonelist(SQL_Connection())
         print("Committing all changes to the database and quitting! Good bye!")
